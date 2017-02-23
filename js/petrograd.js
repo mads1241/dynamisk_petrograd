@@ -16,6 +16,7 @@ function visProduktListe(listen) {
 }
 
 function visProdukt(produkt) {
+
     console.log(produkt);
     // klon produkt_template
     var klon = document.querySelector("#produkt_template").content.cloneNode(true);
@@ -45,12 +46,18 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
+    klon.querySelector(".modalknap").dataset.produkt = produkt.id;
+
+    klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik);
 
     // append klon til .produkt_liste
     document.querySelector(".produkt_liste").appendChild(klon);
 
 }
 
+function modalKnapKlik(event) {
+    console.log("knapklik", event);
+}
 // Scrollknap til toppen
 
 var offset = 300,

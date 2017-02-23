@@ -20,22 +20,23 @@
         <div class="header">
             <div class="header-inner container clear">
                 <a class="logo" href="#"></a>
-                <input type="checkbox" id="navigation-toggle-checkbox" name="navigation-toggle-checkbox" class="navigation-toggle-checkbox sr">
-                <label for="navigation-toggle-checkbox" class="navigation-toggle-label" onclick>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <span class="navigation-toggle-label-inner">
-                    </span></label>
-                <div class="navigation">
-                    <ul class="navigation-menu">
-                        <li class="navigation-item"><a href="#forretter_menu">Forretter</a></li>
-                        <li class="navigation-item"><a href="#hovedretter_menu">Hovedretter</a></li>
-                        <li class="navigation-item"><a href="#dessert_menu">Desserter</a></li>
-                        <li class="navigation-item"><a href="#drikkevarer_menu">Drikkevarer</a></li>
-                        <li class="navigation-item"><a href="#sideorders_menu">Sideorders</a></li>
-                    </ul>
-
+                    </span>
+                    <div class="navigation">
+                        <ul class="navigation-menu">
+                            <li class="navigation-item"><a href="#forretter_menu">Forretter</a></li>
+                            <li class="navigation-item"><a href="#hovedretter_menu">Hovedretter</a></li>
+                            <li class="navigation-item"><a href="#dessert_menu">Desserter</a></li>
+                            <li class="navigation-item"><a href="#drikkevarer_menu">Drikkevarer</a></li>
+                            <li class="navigation-item"><a href="#sideorders_menu">Sideorders</a></li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </div>
+
         <div class="banner-inner container">
             <h1 class="banner-lead">
       <span class="banner-lead-1">in Soviet Russia </span>
@@ -67,18 +68,44 @@
                         <p class="udsolgttekst">Denne ret er desværre udsolgt</p>
 
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Se detaljer</button>
+                        <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal1">Se detaljer</button>
                     </div>
 
                 </template>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Kaviar bruschetta</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/imgs/large/caviarbruschetta.jpg" alt="image" />
+                    <p class="modal_text modal_pris">49,-</p>
+                    <p class="modal_text">Stadig tilgængelig</p>
+                    <p class="modal_text">Ikke vegetar-egnet</p>
+
+                    <p class="modal_text">Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
 
 
             </div>
         </div>
     </div>
 
+
     <!--- HOVEDRETTER HEADING ---->
+
+
 
     <div id="hovedretter_menu" class="content-block about-block2">
         <h2 class="heading">HOVEDRETTER</h2>
