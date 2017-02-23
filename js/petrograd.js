@@ -100,6 +100,15 @@ function visModalProdukt(produkt) {
 
     klon.querySelector(".data_langbeskrivelse").innerHTML = produkt.langbeskrivelse;
 
+    if (produkt.oprindelsesregion == null) {
+
+        var oprindelsetekst = klon.querySelector(".oprindelsetekst");
+        oprindelsetekst.parentNode.removeChild(oprindelsetekst);
+    } else {
+        var oprindelsetekst = klon.querySelector(".oprindelsetekst");
+        klon.querySelector(".data_oprindelse").innerHTML = produkt.oprindelsesregion;
+    }
+
     klon.querySelector(".data_oprindelse").innerHTML = produkt.oprindelsesregion;
 
     if (produkt.allergener == false) {
@@ -109,6 +118,12 @@ function visModalProdukt(produkt) {
     } else {
         var allergenertekst = klon.querySelector(".allergenertekst");
         klon.querySelector(".data_allergener").innerHTML = produkt.allergener;
+    }
+
+    if (produkt.vegetar == false) {
+
+        var vegetartekst = klon.querySelector(".vegetartekst");
+        vegetartekst.parentNode.removeChild(vegetartekst);
     }
 
     // sletter det der stod i modal-content
