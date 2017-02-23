@@ -147,8 +147,6 @@ function visModalProdukt(produkt) {
 
 
 
-
-
 // Scrollknap til toppen
 
 var offset = 300,
