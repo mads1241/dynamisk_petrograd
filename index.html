@@ -26,11 +26,11 @@
                     </span></label>
                 <div class="navigation">
                     <ul class="navigation-menu">
-                        <li class="navigation-item"><a href="#about">Forretter</a></li>
-                        <li class="navigation-item"><a href="#ingredients">Hovedretter</a></li>
-                        <li class="navigation-item"><a href="#menu">Desserter </a></li>
-                        <li class="navigation-item"><a href="#reviews">Drikkevarer</a></li>
-                        <li class="navigation-item"><a href="#reservations">Sideorders</a></li>
+                        <li class="navigation-item"><a href="#forretter_menu">Forretter</a></li>
+                        <li class="navigation-item"><a href="#hovedretter_menu">Hovedretter</a></li>
+                        <li class="navigation-item"><a href="#dessert_menu">Desserter</a></li>
+                        <li class="navigation-item"><a href="#drikkevarer_menu">Drikkevarer</a></li>
+                        <li class="navigation-item"><a href="#sideorders_menu">Sideorders</a></li>
                     </ul>
 
                 </div>
@@ -50,8 +50,90 @@
 
     <!--- FORRETTER HEADING ---->
 
-    <div id="about" class="content-block about-block">
-        <h2 class="heading">Forretter</h2>
+    <div id="forretter_menu" class="content-block about-block">
+        <h2 class="heading">FORRETTER</h2>
+        <div class="container forretter">
+
+            <div class="row produkt_liste">
+
+                <!----- FORRET 1 -------->
+                <template id="produkt_template">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a href="#"><img class="img-responsive data_billede" src='' alt='Text dollar code part one.' /></a>
+
+                        <p class="data_navn">DATA_NAVN</p>
+                        <p class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</p>
+                        <p class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</p>
+                        <p class="udsolgttekst">Denne ret er desværre udsolgt</p>
+
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Se detaljer</button>
+                    </div>
+
+                </template>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--- HOVEDRETTER HEADING ---->
+
+    <div id="hovedretter_menu" class="content-block about-block2">
+        <h2 class="heading">HOVEDRETTER</h2>
+        <div class="container forretter">
+
+            <div class="row produkt_liste">
+
+                <template id="produkt_template">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a href="#"><img class="img-responsive data_billede" src='img/imgs/medium/caviarbruschetta-md.jpg' alt='Text dollar code part one.' /></a>
+
+                        <p class="data_navn">DATA_NAVN</p>
+                        <p class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</p>
+                        <p class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</p>
+                        <p class="udsolgttekst">Denne ret er desværre udsolgt</p>
+
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Se detaljer</button>
+                    </div>
+
+                </template>
+
+            </div>
+        </div>
+    </div>
+
+    <!--- DESSERTER HEADING ---->
+
+    <div id="dessert_menu" class="content-block about-block">
+        <h2 class="heading">DESSERTER</h2>
+        <div class="container forretter">
+
+            <div class="row produkt_liste">
+                <template id="produkt_template">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a href="#"><img class="img-responsive data_billede" src='img/imgs/medium/caviarbruschetta-md.jpg' alt='Text dollar code part one.' /></a>
+
+                        <p class="data_navn">DATA_NAVN</p>
+                        <p class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</p>
+                        <p class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</p>
+                        <p class="udsolgttekst">Denne ret er desværre udsolgt</p>
+
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Se detaljer</button>
+                    </div>
+
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <!--- DRIKKEVARER HEADING ---->
+
+    <div id="drikkevarer_menu" class="content-block about-block2">
+        <h2 class="heading">DRIKKEVARER</h2>
         <div class="container forretter">
 
             <div class="row produkt_liste">
@@ -72,542 +154,39 @@
 
                 </template>
 
-
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--- HOVEDRETTER HEADING ---->
-
-    <div id="ingredients " class="content-block about-block2 ">
-        <h2 class="heading ">Hovedretter</h2>
-
-        <div class="container hovedretter ">
-            <div class="row ">
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-
-                    <img height="240 " width="360 " id="6 " data-toggle="modal " data-target="#myModal5 " src='img/imgs/medium/bulgarskbondesuppe-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 1 -------->
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Bulgarsk bondesuppe</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>99,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="7 " data-toggle="modal " data-target="#myModal6 " src='img/imgs/medium/mos-rogn-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 2 -------->
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Kæmperogn med kartoffelmos</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>89,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="8 " data-toggle="modal " data-target="#myModal7 " src='img/imgs/medium/boef-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 3 -------->
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Diplomat-bøf med grønt</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>179,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <br>
-            <br>
-            <div class="row ">
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="9 " data-toggle="modal " data-target="#myModal8 " src='img/imgs/medium/bondeplatte-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <!----- HOVEDRET 4 -------->
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Zygroffs bondeplatte</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>109,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="10 " data-toggle="modal " data-target="#myModal9 " src='img/imgs/medium/russisktapas-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 6 -------->
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Russisk tapas</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>199,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="11 " data-toggle="modal " data-target="#myModal10 " src='img/imgs/medium/moldaviskfiskesuppe-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 7 -------->
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Moldavisk fiskesuppe</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>139,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <br>
-            <br>
-            <div class="row ">
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="12 " data-toggle="modal " data-target="#myModal11 " src='img/imgs/medium/dynryp-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-
-                            <!----- HOVEDRET 8 -------->
-
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Dynrup</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>149,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!--- DESSERTER HEADING ---->
-
-    <div id="menu " class="content-block about-block ">
-        <h2 class="heading ">Desserter</h2>
-
-        <div class="container desserter ">
-            <div class="row ">
-
-                <!----- DESSERTER 1 -------->
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-
-                    <img height="240 " width="360 " id="13 " data-toggle="modal " data-target="#myModal12 " src='img/imgs/medium/kaviarpandekager-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Pandekager med kaviar</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>79,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- DESSERTER 2 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="14 " data-toggle="modal " data-target="#myModal13 " src='img/imgs/medium/guzni-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Guzni</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>69,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- DESSERTER 3 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="15 " data-toggle="modal " data-target="#myModal14 " src='img/imgs/medium/kirgisiskroulade-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Kirgisisk roulade</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>89,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!----- DESSERTER 3 - Modalboks -------->
-
-
-            </div>
-            <br>
-            <br>
-            <div class="row ">
-
-                <!----- DESSERTER 4 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="16 " data-toggle="modal " data-target="#myModal15 " src='img/imgs/medium/pavlova-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Pavlova i melon</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>49,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- DESSERTER 5 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="17 " data-toggle="modal " data-target="#myModal16 " src='img/imgs/medium/groggiroshorn-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Groggiroshorn</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>39,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- DESSERTER 6 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="18 " data-toggle="modal " data-target="#myModal17 " src='img/imgs/medium/syltedeloeg-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Søde, syltede løg</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>59,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!--- DRIKKEVARER HEADING ---->
-
-    <div id="reviews " class="content-block about-block2 ">
-        <h2 class="heading ">Drikkevarer</h2>
-
-
-        <div class="container drikkevarer ">
-            <div class="row ">
-
-                <!----- DRIKKEVARER 1 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-
-                    <img height="240 " width="360 " id="19 " data-toggle="modal " data-target="#myModal18 " src='img/imgs/medium/bochkarev-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Bochkarev fadøl</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>55,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!----- DRIKKEVARER 2 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="20 " data-toggle="modal " data-target="#myModal19 " src='img/imgs/medium/voda-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Voda-vodka</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>19,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!----- DRIKKEVARER 3 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="21 " data-toggle="modal " data-target="#myModal20 " src='img/imgs/medium/cola-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Gloske (cola)</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>39,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <div class="row ">
-
-
-                <!----- DRIKKEVARER 4 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="22 " data-toggle="modal " data-target="#myModal21 " src='img/imgs/medium/roedvin-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Rødvin (glas)</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>49,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- DRIKKEVARER 5 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="23 " data-toggle="modal " data-target="#myModal22 " src='img/imgs/medium/hvidvin-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Hvidvin (glas)</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>39,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>
 
     <!--- SIDEORDERS HEADING ---->
 
-    <div id="reservations " class="content-block about-block ">
-        <h2 class="heading ">Sideorders</h2>
+    <div id="sideorders_menu" class="content-block about-block">
+        <h2 class="heading">SIDEORDERS</h2>
+        <div class="container forretter">
 
-        <div class="container sideorders ">
-            <div class="row ">
+            <div class="row produkt_liste">
 
-                <!----- SIDEORDERS 1 -------->
+                <!----- FORRET 1 -------->
+                <template id="produkt_template">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a href="#"><img class="img-responsive data_billede" src='' alt='Text dollar code part one.' /></a>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <p class="data_navn">DATA_NAVN</p>
+                        <p class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</p>
+                        <p class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</p>
+                        <p class="udsolgttekst">Denne ret er desværre udsolgt</p>
 
-                    <img height="240 " width="360 " id="24 " data-toggle="modal " data-target="#myModal23 " src='img/imgs/medium/ringbroed-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
 
-                                <p>Russisk ringbrød</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>29,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Se detaljer</button>
                     </div>
-                </div>
 
-
-
-                <!----- SIDEORDERS 2 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="25 " data-toggle="modal " data-target="#myModal24 " src='img/imgs/medium/bondeboller-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Murmanske bondeboller</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>19,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!----- SIDEORDERS 3 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="26 " data-toggle="modal " data-target="#myModal25 " src='img/imgs/medium/russisksalat-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Russisk salat</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>49,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <div class="row ">
-
-                <!----- SIDEORDERS 4 -------->
-
-                <div class="col-xs-12 col-sm-6 col-md-4 ">
-                    <img height="240 " width="360 " id="27 " data-toggle="modal " data-target="#myModal26 " src='img/imgs/medium/kartofler-md.jpg' alt='Text dollar code part one.' />
-                    <div class="container ">
-                        <div class="row ">
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>Kogte kartofler</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 col-md-3 ">
-
-                                <p>29,-</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 "></div>
-                        </div>
-                    </div>
-                </div>
-
-
+                </template>
+                <!--- HOVEDRETTER HEADING ---->
             </div>
         </div>
     </div>
+
+
     <footer>
         <a href="#0 " class="cd-top ">Top</a>
     </footer>

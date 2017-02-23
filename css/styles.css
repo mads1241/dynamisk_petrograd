@@ -604,7 +604,7 @@ p {
 
 .about-block {
     background: url(../baggrund.jpg);
-    background-size: cover;
+    background-size: auto;
 }
 
 .about-block2 {
@@ -774,4 +774,8 @@ p {
 
 .udsolgttekst {
     color: #843030;
+}
+
+.rabat {
+    text-decoration: line-through;
 }
