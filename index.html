@@ -79,30 +79,33 @@
     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Kaviar bruschetta</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="img/imgs/large/caviarbruschetta.jpg" alt="image" />
-                    <p class="modal_text modal_pris">49,-</p>
-                    <p class="modal_text">Stadig tilgængelig</p>
-                    <p class="modal_text">Ikke vegetar-egnet</p>
-
-                    <p class="modal_text">Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                </div>
 
 
             </div>
         </div>
     </div>
 
+    <template id="modal_template">
 
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title data_navn"></h4>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive" src="img/imgs/large/caviarbruschetta.jpg" alt="image" />
+            <p class="modal_text modal_pris">49,-</p>
+            <p class="modal_text">Stadig tilgængelig</p>
+            <p class="modal_text data_vegetarer">Denne ret er for vegetarer</p>
+            <p class="modal_text">Allergener: </p>
+            <p class="modal_text lang_beskrivelse data_langbeskrivelse">Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+        </div>
+
+    </template>
     <!--- HOVEDRETTER HEADING ---->
 
 

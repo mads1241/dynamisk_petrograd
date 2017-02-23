@@ -57,6 +57,35 @@ function visProdukt(produkt) {
 
 function modalKnapKlik(event) {
     console.log("knapklik", event);
+
+    var produktId = event.target.dataset.produkt;
+
+    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {
+        id: produktId
+    }, visModalProdukt);
+}
+
+function visModalProdukt(produkt) {
+
+    console.log("vis modal for ", produkt);
+
+    var klon = document.querySelector("#modal_template").content.cloneNode(true);
+
+    //sletter det der stod i modal-content
+
+    document.querySelector(".modal-content").innerHTML = "";
+
+
+
+
+
+
+    // put data ind i klonen
+    klon.querySelector(".data_navn").innerHTML = produkt.navn;
+
+    document.querySelector(".modal-content").appendChild(klon);
+
+
 }
 // Scrollknap til toppen
 
