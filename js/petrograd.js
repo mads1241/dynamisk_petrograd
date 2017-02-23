@@ -71,8 +71,7 @@ function visModalProdukt(produkt) {
     console.log("vis modal for ", produkt);
 
     // find modal_template - klon den
-    var klon =
-        document.querySelector("#modal_template").content.cloneNode(true);
+    var klon = document.querySelector("#modal_template").content.cloneNode(true);
 
     // put data i klonen
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
@@ -99,10 +98,28 @@ function visModalProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
+    klon.querySelector(".data_langbeskrivelse").innerHTML = produkt.langbeskrivelse;
+    klon.querySelector(".data_allergener").innerHTML = produkt.allergener;
+    klon.querySelector(".data_oprindelse").innerHTML = produkt.oprindelsesregion;
+
+    if (produkt.allergener == false) {
+
+        var allergenertekst = klon.querySelector(".allergenertekst");
+        allergenertekst.parentNode.removeChild(allergenertekst);
+    } else {
+
+        var allergenertekst = klon.querySelector(".allergenertekst");
+        rabatpris.parentNode.Child(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
+    }
+
     // sletter det der stod i modal-content
+
     document.querySelector(".modal-content").innerHTML = "";
 
     // append klonen til modal-content
+
     document.querySelector(".modal-content").appendChild(klon);
 }
 
