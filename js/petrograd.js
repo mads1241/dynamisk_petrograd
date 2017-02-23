@@ -1,12 +1,20 @@
-$(document).ready(function () {
-    $('img').on('click', function () {
-        var image = $(this).attr('src');
-        //alert(image);
-        $('#myModal').on('show.bs.modal', function () {
-            $(".showimage").attr("src", image);
-        });
-    });
-});
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+    console.log("siden vises");
+    visProdukt();
+}
+
+function visProdukt() {
+    // klon produkt_template
+    var klon = document.querySelector("#produkt_template").content.cloneNode(true);
+    // indsæt data i klon
+
+    // append klon til .produkt_liste
+    document.querySelector(".produkt_liste").appendChild(klon);
+
+}
+
 
 var offset = 300,
     //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
