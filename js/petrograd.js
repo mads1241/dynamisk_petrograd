@@ -126,6 +126,16 @@ function visModalProdukt(produkt) {
         vegetartekst.parentNode.removeChild(vegetartekst);
     }
 
+    if (produkt.alkoholprocent == false) {
+
+        var alkoholtekst = klon.querySelector(".alkoholtekst");
+        alkoholtekst.parentNode.removeChild(alkoholtekst);
+    } else {
+        var alkoholtekst = klon.querySelector(".alkoholtekst");
+        klon.querySelector(".data_alkohol").innerHTML = produkt.alkoholprocent;
+    }
+
+
     // sletter det der stod i modal-content
 
     document.querySelector(".modal-content").innerHTML = "";
