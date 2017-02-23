@@ -758,6 +758,7 @@ p {
     .cd-top {
         height: 60px;
         width: 60px;
+        width: 60px;
         right: 30px;
         bottom: 30px;
     }
@@ -765,6 +766,7 @@ p {
 
 .rabatpris {
     color: #60a060;
+    font-size: 15pt;
 }
 
 .udsolgt {

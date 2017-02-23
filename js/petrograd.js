@@ -58,7 +58,9 @@ function visProdukt(produkt) {
 function modalKnapKlik(event) {
     console.log("knapklik", event);
 
+    // find det produkt id, hvis knap der blev trykket på
     var produktId = event.target.dataset.produkt;
+    console.log("Klik på produkt: ", produktId);
 
     $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?", {
         id: produktId
@@ -66,27 +68,48 @@ function modalKnapKlik(event) {
 }
 
 function visModalProdukt(produkt) {
-
     console.log("vis modal for ", produkt);
 
-    var klon = document.querySelector("#modal_template").content.cloneNode(true);
+    // find modal_template - klon den
+    var klon =
+        document.querySelector("#modal_template").content.cloneNode(true);
 
-    //sletter det der stod i modal-content
+    // put data i klonen
+    klon.querySelector(".data_navn").innerHTML = produkt.navn;
+    klon.querySelector(".data_pris").innerHTML = produkt.pris;
 
+    var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
+    klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
+
+    klon.querySelector(".data_billede").src = "img/imgs/medium/" + produkt.billede + "-md.jpg";
+
+    if (produkt.udsolgt == false) {
+
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
+    if (produkt.udsolgt == true || produkt.rabatsats == 0) {
+
+        var rabatpris = klon.querySelector(".rabatpris");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
+    }
+
+    // sletter det der stod i modal-content
     document.querySelector(".modal-content").innerHTML = "";
 
-
-
-
-
-
-    // put data ind i klonen
-    klon.querySelector(".data_navn").innerHTML = produkt.navn;
-
+    // append klonen til modal-content
     document.querySelector(".modal-content").appendChild(klon);
-
-
 }
+
+
+
+
+
 // Scrollknap til toppen
 
 var offset = 300,
