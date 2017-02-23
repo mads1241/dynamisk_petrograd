@@ -28,11 +28,20 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "img/imgs/small/" + produkt.billede + "-sm.jpg";
 
+    if (produkt.udsolgt == false) {
+
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
     // append klon til .produkt_liste
     document.querySelector(".produkt_liste").appendChild(klon);
 
 }
 
+// Scrollknap til toppen
 
 var offset = 300,
     //browser window scroll (in pixels) after which the "back to top" link opacity is reduced

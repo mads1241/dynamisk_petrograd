@@ -764,5 +764,14 @@ p {
 }
 
 .rabatpris {
-    color: green;
+    color: #60a060;
+}
+
+.udsolgt {
+    text-decoration: line-through;
+    color: #843030;
+}
+
+.udsolgttekst {
+    color: #843030;
 }
