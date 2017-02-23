@@ -99,7 +99,7 @@ function visModalProdukt(produkt) {
     }
 
     klon.querySelector(".data_langbeskrivelse").innerHTML = produkt.langbeskrivelse;
-    klon.querySelector(".data_allergener").innerHTML = produkt.allergener;
+
     klon.querySelector(".data_oprindelse").innerHTML = produkt.oprindelsesregion;
 
     if (produkt.allergener == false) {
@@ -107,11 +107,8 @@ function visModalProdukt(produkt) {
         var allergenertekst = klon.querySelector(".allergenertekst");
         allergenertekst.parentNode.removeChild(allergenertekst);
     } else {
-
         var allergenertekst = klon.querySelector(".allergenertekst");
-        rabatpris.parentNode.Child(rabatpris);
-    } else {
-        klon.querySelector(".pris").classList.add("rabat");
+        klon.querySelector(".data_allergener").innerHTML = produkt.allergener;
     }
 
     // sletter det der stod i modal-content
