@@ -11,7 +11,26 @@ function sidenVises() {
 
 function visProduktListe(listen) {
     console.table(listen);
+
+
+    listen = listen.filter(fjernUdsolgte);
+
     listen.forEach(visProdukt);
+
+}
+
+function fjernUdsolgte(produkt) {
+    // eller
+    //return !product.udsolgt;
+
+
+
+    if (produkt.udsolgt == true) {
+
+        return false;
+    } else {
+        return true;
+    }
 
 }
 
