@@ -8,6 +8,8 @@ function sidenVises() {
 
     document.querySelector(".filterknap_vegetar").addEventListener("click", filtrerVegetar);
 
+    document.querySelector(".filterknap_udsolgt").addEventListener("click", filtrerUdsolgt);
+
     document.querySelector(".filterknap_alkohol").addEventListener("click", filtrerAlkohol);
 
     document.querySelector(".filterknap_tilbud").addEventListener("click", filtrerTilbud);
@@ -17,6 +19,16 @@ function sidenVises() {
 function filtrerVegetar(event) {
 
     var liste = document.querySelectorAll(".produkt:not(.vegetar)");
+
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault();
+
+}
+
+function filtrerTilbud(event) {
+
+    var liste = document.querySelectorAll(".produkt:not(.rabatsats)");
 
     liste.forEach(div => div.classList.toggle("hide"));
 
@@ -34,9 +46,9 @@ function filtrerAlkohol(event) {
 
 }
 
-function filtrerTilbud(event) {
+function filtrerUdsolgt(event) {
 
-    var liste = document.querySelectorAll(".produkt:not(.rabatsats)");
+    var liste = document.querySelectorAll(".produkt:not(.udsolgt)");
 
     liste.forEach(div => div.classList.toggle("hide"));
 
@@ -91,6 +103,11 @@ function visProdukt(produkt) {
     }
     if (produkt.alkoholprocent > 5) {
         klon.querySelector(".produkt").classList.add("alkoholprocent");
+
+    }
+    if (produkt.udsolgt == true) {
+        klon.querySelector(".produkt").classList.add("udsolgt");
+
     }
     if (produkt.rabatsats > 19) {
         klon.querySelector(".produkt").classList.add("rabatsats");
