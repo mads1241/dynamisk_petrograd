@@ -8,6 +8,8 @@ function sidenVises() {
 
     document.querySelector(".filterknap_vegetar").addEventListener("click", filtrerVegetar);
 
+    document.querySelector(".filterknap_alkohol").addEventListener("click", filtrerAlkohol);
+
 }
 
 function filtrerVegetar(event) {
@@ -20,6 +22,16 @@ function filtrerVegetar(event) {
 
 }
 
+function filtrerAlkohol(event) {
+
+    var liste = document.querySelectorAll(".produkt:not(.alkoholprocent)");
+
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault();
+
+
+}
 
 function visProduktListe(listen) {
     console.log(listen);
@@ -66,16 +78,30 @@ function visProdukt(produkt) {
     if (produkt.vegetar == true) {
         klon.querySelector(".produkt").classList.add("vegetar");
     }
+    if (produkt.alkoholprocent > 5) {
+        klon.querySelector(".produkt").classList.add("alkoholprocent");
+    }
+    if (produkt.udsolgt == true) {
+        klon.querySelector(".produkt").classList.add("udsolgt");
+    }
 
     klon.querySelector(".modalknap").dataset.produkt = produkt.id;
 
     klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik);
 
     // append klon til .produkt_liste
-    document.querySelector(".produkt_liste").appendChild(klon);
 
-
-
+    if (produkt.kategori == "forretter") {
+        document.querySelector(".forretliste").appendChild(klon);
+    } else if (produkt.kategori == "hovedretter") {
+        document.querySelector(".hovedretliste").appendChild(klon);
+    } else if (produkt.kategori == "desserter") {
+        document.querySelector(".dessertliste").appendChild(klon);
+    } else if (produkt.kategori == "drikkevarer") {
+        document.querySelector(".drikkevarerliste").appendChild(klon);
+    } else if (produkt.kategori == "sideorders") {
+        document.querySelector(".sideordersliste").appendChild(klon);
+    }
 
 }
 
@@ -167,6 +193,7 @@ function visModalProdukt(produkt) {
     // append klonen til modal-content
 
     document.querySelector(".modal-content").appendChild(klon);
+
 }
 
 

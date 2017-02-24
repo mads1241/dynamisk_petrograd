@@ -52,11 +52,15 @@
     <!--- FORRETTER HEADING ---->
 
     <div id="forretter_menu" class="content-block about-block">
-        <P>Filtrer:</P> <a class="filterknap_vegetar" href#>Kun vegetarretter</a> <a class="filterknap_udsolgt" href#>Udsolgt</a><a class="filterknap_alkohol" href#>Med alkohol</a> <a class="filterknap_tilbud" href#>På tilbud</a>
+        <P>Vis retter:</P>
+        <button><a class="filterknap_vegetar" href#>For vegetarer</a></button>
+        <button><a class="filterknap_udsolgt" href#>Ikke udsolgte</a></button>
+        <button><a class="filterknap_alkohol" href#>Med alkohol</a></button>
+        <button> <a class="filterknap_tilbud" href#>På tilbud</a></button>
         <h2 class="heading">FORRETTER</h2>
-        <div class="container forretter ">
+        <div class="container">
 
-            <div class="row produkt_liste">
+            <div class="row forretliste">
 
                 <!----- FORRET 1 -------->
                 <template id="produkt_template">
@@ -112,13 +116,11 @@
     </template>
     <!--- HOVEDRETTER HEADING ---->
 
-
-
     <div id="hovedretter_menu" class="content-block about-block2">
         <h2 class="heading">HOVEDRETTER</h2>
-        <div class="container hovedretter">
+        <div class="container">
 
-            <div class="row produkt_liste">
+            <div class="row hovedretliste">
 
                 <template id="produkt_template">
                     <div class="col-xs-4 col-sm-4 col-md-4">
@@ -143,9 +145,9 @@
 
     <div id="dessert_menu" class="content-block about-block">
         <h2 class="heading">DESSERTER</h2>
-        <div class="container desserter">
+        <div class="container">
 
-            <div class="row produkt_liste">
+            <div class="row dessertliste">
                 <template id="produkt_template">
                     <div class="col-xs-4 col-sm-4 col-md-4">
                         <a href="#"><img class="img-responsive data_billede" src='img/imgs/medium/caviarbruschetta-md.jpg' alt='Text dollar code part one.' /></a>
@@ -170,7 +172,7 @@
         <h2 class="heading">DRIKKEVARER</h2>
         <div class="container drikkevarer">
 
-            <div class="row produkt_liste">
+            <div class="row drikkevarerliste">
 
                 <!----- FORRET 1 -------->
                 <template id="produkt_template">
@@ -198,7 +200,7 @@
         <h2 class="heading">SIDEORDERS</h2>
         <div class="container sideorders">
 
-            <div class="row produkt_liste">
+            <div class="row sideordersliste">
 
                 <!----- FORRET 1 -------->
                 <template id="produkt_template">

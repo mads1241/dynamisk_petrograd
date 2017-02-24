@@ -604,7 +604,7 @@
 
     .about-block {
         background: url(../baggrund.jpg);
-        background-size: auto;
+        background-size: cover;
     }
 
     .about-block2 {
