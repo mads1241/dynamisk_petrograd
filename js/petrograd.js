@@ -6,31 +6,28 @@ function sidenVises() {
 
     $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe)
 
+    document.querySelector(".filterknap_vegetar").addEventListener("click", filtrerVegetar);
 
 }
+
+function filtrerVegetar(event) {
+
+    var liste = document.querySelectorAll(".produkt:not(.vegetar)");
+
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault();
+
+}
+
 
 function visProduktListe(listen) {
-    console.table(listen);
+    console.log(listen);
 
 
-    listen = listen.filter(fjernUdsolgte);
+    //    listen = listen.filter(produkt => !produkt.udsolgt);
 
     listen.forEach(visProdukt);
-
-}
-
-function fjernUdsolgte(produkt) {
-    // eller
-    //return !product.udsolgt;
-
-
-
-    if (produkt.udsolgt == true) {
-
-        return false;
-    } else {
-        return true;
-    }
 
 }
 
@@ -65,12 +62,20 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
+
+    if (produkt.vegetar == true) {
+        klon.querySelector(".produkt").classList.add("vegetar");
+    }
+
     klon.querySelector(".modalknap").dataset.produkt = produkt.id;
 
     klon.querySelector(".modalknap").addEventListener("click", modalKnapKlik);
 
     // append klon til .produkt_liste
     document.querySelector(".produkt_liste").appendChild(klon);
+
+
+
 
 }
 

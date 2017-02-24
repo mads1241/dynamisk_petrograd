@@ -690,10 +690,6 @@
         font-family: 'Barrio', cursive;
     }
 
-    .row img {
-        cursor: pointer;
-    }
-
     .modal_pris {
         font-size: 15pt;
         line-height: 40pt;
