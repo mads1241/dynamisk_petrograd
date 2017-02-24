@@ -788,12 +788,48 @@
     }
 
     .modalknap {
-        background-color: rgba(255, 255, 255, 0.74);
-        color: #000000;
-        font-family: 'Varela', sans-serif;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #843030;
         border: none;
+        color: #FFFFFF;
+        width: 200px;
+        text-align: center;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        font-family: 'Barrio', cursive;
+    }
+
+    .modalknap span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .modalknap span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
     }
 
     .modalknap:hover {
-        background-color: #843030;
+        background-color: darkgrey;
+    }
+
+    .modalknap:hover span {
+        padding-right: 25px;
+    }
+
+    .modalknap:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .miniature_billede {
+        height: 50%;
     }
