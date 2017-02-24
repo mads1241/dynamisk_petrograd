@@ -262,8 +262,8 @@
         padding: 1em 3em;
         text-decoration: none;
         border: 1px solid transparent;
-        background: #c90;
-        -webkit-transition: all 0.3s;
+        background: #000;
+        background: rgba(0, 0, 0, 0.5);
         transition: all 0.3s;
         font-weight: 700;
         display: inline-block;
@@ -272,7 +272,7 @@
     }
 
     .button:hover {
-        background: #cd9f0b;
+        background: #843030;
         color: #fff;
     }
 
@@ -612,75 +612,6 @@
         background-size: cover;
     }
 
-    .navigation-toggle-label {
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: normal;
-        border: 0;
-        font-weight: 700;
-        text-transform: uppercase;
-        display: block;
-        float: right;
-        position: relative;
-        height: 20px;
-        width: 25px;
-        background: transparent;
-        margin-top: 50px;
-        margin-right: 10px;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    @media only screen and (min-width: 740px) {
-        .navigation-toggle-label {
-            display: none;
-        }
-    }
-
-    .navigation-toggle-label:before,
-    .navigation-toggle-label:after,
-    .navigation-toggle-label .navigation-toggle-label-inner:before {
-        content: "";
-        width: 25px;
-        height: 1px;
-        background: #fff;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-transition: all .5s;
-        transition: all .5s;
-    }
-
-    .navigation-toggle-label:after {
-        -webkit-transform: translate3d(0, 7px, 0);
-        transform: translate3d(0, 7px, 0);
-    }
-
-    .navigation-toggle-label .navigation-toggle-label-inner:before {
-        -webkit-transform: translate3d(0, 14px, 0);
-        transform: translate3d(0, 14px, 0);
-    }
-
-    .navigation-toggle-checkbox[type=checkbox]:checked + .navigation-toggle-label:before {
-        -webkit-transform: translate3d(0, 7px, 0) rotate(-225deg);
-        transform: translate3d(0, 7px, 0) rotate(-225deg);
-    }
-
-    .navigation-toggle-checkbox[type=checkbox]:checked + .navigation-toggle-label:after {
-        opacity: 0;
-    }
-
-    .navigation-toggle-checkbox[type=checkbox]:checked + .navigation-toggle-label .navigation-toggle-label-inner:before {
-        -webkit-transform: translate3d(0, 7px, 0) rotate(45deg);
-        transform: translate3d(0, 7px, 0) rotate(45deg);
-    }
-
-    .navigation-toggle-checkbox[type=checkbox]:checked + .navigation-toggle-label + .navigation {
-        opacity: 1;
-        max-height: 400px;
-    }
-
     .modal_text {
         color: black;
         font-size: 12pt;
@@ -814,7 +745,8 @@
     }
 
     .modalknap:hover {
-        background-color: darkgrey;
+        background: #000;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .modalknap:hover span {
@@ -828,4 +760,9 @@
 
     .miniature_billede {
         height: 50%;
+    }
+
+    .sortering_retter,
+    .btn-group {
+        margin: 0 auto;
     }
